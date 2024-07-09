@@ -1,0 +1,49 @@
+.titulo {
+    text-align: center;
+    color: rgb(223, 223, 223);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(134, 116, 151);
+}
+
+#btn {
+    border-radius: 5px;
+    background-color: rgb(168, 168, 168);
+    color: aliceblue;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#text1 {
+    background-color: rgb(228, 217, 204);
+    font-size: large;
+    border-radius: 5px;
+}
+
+
+
+
+#div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+
+#div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div3 {
+    background-color: rgb(168, 168, 168);
+    width: 50%;
+    padding: 20px;
+}
+
+
+
