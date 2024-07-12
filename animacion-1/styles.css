@@ -9,6 +9,7 @@ body {
     background-color: white;
     overflow: hidden;
     position: relative;
+    background-color: rgb(67, 134, 151);
 }
 
 .sol {
@@ -17,11 +18,17 @@ body {
     background-color: rgb(236, 197, 23);
     border-radius: 50%;
     position: absolute;
-    bottom: 100px;
-    right: 200px;
-    animation:
-    move 5s linear
+    bottom: 70px;
+    right: 120px;
+   /*  animation:
+    move 5s linear; */
 
+}
+
+.guia{
+    z-index: 5;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 @keyframes move {
@@ -33,5 +40,83 @@ body {
         bottom: 100px;
     }
   }
+
+
+.montana img{
+    position: absolute;
+    z-index: 4;
+}
+
+.nube {
+    position: absolute;
+    z-index: 1;
+}
+
+.uno {
+    width: 150px;
+    bottom: 80px;
+    right: 600px;
+    top: 50px;
+    animation:
+    move1 5s linear;
+}
+
+@keyframes move1 {
+    to {
+        transform: translateX(700px);
+    }
+}
+
+.dos {
+    width: 150px;
+    bottom: 500px;
+    right: -20px;
+    top: 270px;
+    z-index: 5;
+    animation: 
+    move2 6s linear;
+}
+
+@keyframes move2 {
+    to {
+        transform: translateX(-600px);
+    }
+}
+
+
+.tres {
+    width: 150px;
+    bottom: 200px;
+    right: 200px;
+    top: 50px;
+    animation: move3 7s linear;
+}
+
+@keyframes move3 {
+    to {
+        transform: translateX(700px);
+    }
+}
+
+.cuatro {
+    width: 150px;
+    bottom: -200px;
+    right: 500px;
+    top: 150px;
+    z-index: 5;
+    animation: move4 7s linear;
+}
+
+@keyframes move4 {
+    to {
+        transform: translateX(700px);
+    }
+}
+
+
+
+
+
+
 
   
