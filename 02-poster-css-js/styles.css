@@ -32,7 +32,7 @@ body {
             
 }
 
-.calcifer-2 img{
+/* .calcifer-2 img{
     position: absolute;
     z-index: 2;
     width: 100px;
@@ -40,14 +40,14 @@ body {
     bottom: 0;
     right: 0;
 }
-
+ */
 .frase img{
     position: absolute;
     z-index: 3;
     width: 700px;
     height: 700px;
     right: 30px;
-    bottom: -20px; 
+    bottom: -60px; 
 }
 
 .flor img{
@@ -58,21 +58,73 @@ body {
 .uno img{
     width: 100px;
     height: 100px;
+    animation: flor1 8s linear infinite alternate-reverse;
+}
+
+@keyframes flor1 {
+    to {
+        transform: translateX(1000px);
+    }
 }
 
 .dos img{
     width: 100px;
     height: 100px;
     bottom: 0;
-    left: 0;
+    right: -80px;
+    top: 80px;
+    animation: flor2 4s linear infinite alternate-reverse;
+    
 }
+
+@keyframes flor2 {
+    to {
+        transform: translateX(-400px);
+    }
+}
+
+.tres img{
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    top: 300px;
+    animation: flor3 10s linear infinite alternate-reverse;
+   
+}
+
+@keyframes flor3 {
+    to {
+        transform: translateX(1000px);
+    }
+}
+
+.cuatro img{
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    animation: flor4 5s linear infinite alternate-reverse;
+}
+
+@keyframes flor4 {
+    to {
+        transform: translateX(-500px);
+    }
+}
+
+
 
 .corazon img{
     position: absolute;
     z-index: 5;
     width: 50px;
     height: 50px;
-    top: 10px;
+    bottom: 350px;
+    left: 220px;
     
 }
+
+
+
 
