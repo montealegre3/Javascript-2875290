@@ -86,7 +86,7 @@ button{
 }
 
 button:hover{
-    background: #ff00ff;
+    background: #8d318d;
 }
 
 ul{
@@ -115,7 +115,7 @@ ul li{
 }
 
 ul li:hover{
-    background: rgb(109, 69, 109);
+    background: rgb(160, 67, 160);
 }
 
 ul li.checked{
@@ -142,7 +142,6 @@ ul li span:hover{
     background: purple;
     color: white;
 }
-
 
 
 ul li i{

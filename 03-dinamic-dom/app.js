@@ -40,7 +40,7 @@ function borrarElemento (e){
     }
 }
 function completarTarea (e){
-    e.target.style.textDecoration
+    e.target.style.textDecoration = 'line-through';
 }
 
 
@@ -49,3 +49,4 @@ function completarTarea (e){
 btnCrear.addEventListener('click', crear);
 btnBorrar.addEventListener('click', borrarPantalla);
 main.addEventListener('click', borrarElemento);
+main.addEventListener('click', completarTarea);
