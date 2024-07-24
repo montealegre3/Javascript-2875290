@@ -1,12 +1,12 @@
-const inputBox = document.getElementById('input-box');
-const listContainer = document.getElementById('list-container');
+// Constantes 
 
-document.getElementById("add-btn").addEventListener("click", Nuevatarea);
-addEventListener("keydown", (e) => {
-    if(e.key == "Enter"){
-        Nuevatarea()
-    }
-})
+const inputBox = document.getElementById('input-box'); //Constante del input
+const listContainer = document.getElementById('list-container'); //Constante del container
+const btnBorrar = document.getElementById('borrar-btn') //Constante del boton borrar todo
+
+
+
+//Funciones 
 
 function Nuevatarea(){
     if(inputBox.value == ""){
@@ -20,15 +20,33 @@ function Nuevatarea(){
         listContainer.appendChild(li);
     }
     inputBox.value = "";
-    SVGAnimatedPreserveAspectRatio()
+    saveData()
 }
-
-// guardar datos en localLStorage
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML)
 }
 
+function mostrarTarea(){
+    listContainer.innerHTML= localStorage.getItem("data")
+}
+
+mostrarTarea()
+
+function limpiarTareas(){
+    
+}
+
+
+
+//Eventos 
+
+document.getElementById("add-btn").addEventListener("click", Nuevatarea);
+addEventListener("keydown", (e) => {
+    if(e.key == "Enter"){
+        Nuevatarea()
+    }
+})
 
 listContainer.addEventListener("click", (e) => {
     if(e.target.tagName.toUpperCase() === "LI"){
@@ -40,13 +58,7 @@ listContainer.addEventListener("click", (e) => {
     }
 })
 
-// Recuperar datos de almacenamiento local 
-
-function showTask(){
-    listContainer.innerHTML= localStorage.getItem("data")
-}
-
-showTask()
+btnBorrar.addEventListener('click', limpiarTareas); //Evento del boton borrar todo
 
 
 
