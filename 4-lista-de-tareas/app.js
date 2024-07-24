@@ -8,17 +8,17 @@ const btnBorrar = document.getElementById('borrar-btn') //Constante del boton bo
 
 //Funciones 
 
-function Nuevatarea(){
+function Nuevatarea(){ //Función para las nuevas tareas
     if(inputBox.value == ""){
-        alert("Crea tu tarea")
-    }else{
+        alert("Crea tu tarea") //Si el input está vacío y el usuario da click en el boton agregar, aparece una alerta "Crea tu tarea" 
+    }else{ // Sino se crean la siguientes variables 
         let li= document.createElement("li");
         li.innerHTML= inputBox.value;
         let span= document.createElement("span");
         span.innerHTML= "<i class='fa-solid fa-trash'></i>";
         li.appendChild(span);
         listContainer.appendChild(li);
-    }
+    } //Condicional para la función
     inputBox.value = "";
     saveData()
 }
@@ -34,7 +34,8 @@ function mostrarTarea(){
 mostrarTarea()
 
 function limpiarTareas(){
-    
+    listContainer.innerHTML = "";
+    localStorage.removeItem("data");
 }
 
 
