@@ -15,11 +15,6 @@ let objeto = { //Objeto
 }
  */
 
-/*Animaniacs, Avatar: La Leyenda de Aang, Ben 10, Bob Esponja, Coraje el Perro Cobarde, Ed, Edd y Eddy, El Increíble Mundo de Gumball, El Laboratorio de Dexter,
-Futurama, Gravity Falls, Hora de Aventura, Jimmy Neutrón: El Niño Genio, Johnny Test, La Liga de la Justicia, Las Chicas Superpoderosas, Las Sombrías Aventuras de Billy y Mandy,
-Lego Ninjago, Los Looney Tunes, Los Padrinos Mágicos, Los Simpson, Mansión Foster para Amigos Imaginarios, Over the Garden Wall, Regular Show, Samurai Jack, pocoyo, 
-Teen Titans, Dragon Ball, Naruto, Los picapiedra, Pokemon*/
-
 
 let peliculasAnimadas = [
     {
@@ -46,61 +41,61 @@ let peliculasAnimadas = [
         id: 3,
         nombre: 'Ben 10',
         year: 2005,
-        genero: ['Fantasía', 'Aventuras', 'Telecomedia', 'Drama'],
-        creador: ['Michael Dante', 'Bryan Konietzko'],
-        numeroDetemporadas: 3,
-        numeroDeEpisodios: 61,
-        imagen: 'https://www.ecured.cu/images/d/dc/Avatar_The_Last_Airbender.jpg',
+        genero: ['Acción', 'Aventura', 'Ciencia ficción'],
+        creador: 'Man of Action',
+        numeroDetemporadas: 4,
+        numeroDeEpisodios: 49,
+        imagen: 'https://m.media-amazon.com/images/M/MV5BZjg2ZjViMTktNWQ1Yy00ODZiLWE1OTgtNDY3MjI0OGUyNjNhXkEyXkFqcGdeQXVyNTk4NDI4NTE@._V1_FMjpg_UX1000_.jpg',
     },
     {
         id: 4,
         nombre: 'Bob esponja',
-        year: 2005,
-        genero: ['Fantasía', 'Aventuras', 'Telecomedia', 'Drama'],
-        creador: ['Michael Dante', 'Bryan Konietzko'],
-        numeroDetemporadas: 3,
-        numeroDeEpisodios: 61,
-        imagen: 'https://www.ecured.cu/images/d/dc/Avatar_The_Last_Airbender.jpg',
+        year: 1999,
+        genero: ['Comedia', 'Humor absurdo'],
+        creador: 'Stephen Hillenburg',
+        numeroDetemporadas: 15,
+        numeroDeEpisodios: 299,
+        imagen: 'https://vignette.wikia.nocookie.net/doblaje/images/4/45/Poster-Bob-Esponja.jpg/revision/latest?cb=20171125060321&path-prefix=es',
     },
     {
         id: 5,
         nombre: 'Coraje el perro cobarde',
-        year: 2005,
-        genero: ['Fantasía', 'Aventuras', 'Telecomedia', 'Drama'],
-        creador: ['Michael Dante', 'Bryan Konietzko'],
-        numeroDetemporadas: 3,
-        numeroDeEpisodios: 61,
-        imagen: 'https://www.ecured.cu/images/d/dc/Avatar_The_Last_Airbender.jpg',
+        year: 1999,
+        genero: ['Horror', 'Aventuras', 'Suspenso', 'Comedia'],
+        creador: 'John R. Dilworth',
+        numeroDetemporadas: 4,
+        numeroDeEpisodios: 52,
+        imagen: 'https://vignette.wikia.nocookie.net/doblaje/images/a/ac/CorajeElPerroCobarde.jpg/revision/latest?cb=20200721163946&path-prefix=es',
     },
     {
         id: 6,
         nombre: 'Ed, Edd y Eddy',
-        year: 2005,
-        genero: ['Fantasía', 'Aventuras', 'Telecomedia', 'Drama'],
-        creador: ['Michael Dante', 'Bryan Konietzko'],
-        numeroDetemporadas: 3,
-        numeroDeEpisodios: 61,
-        imagen: 'https://www.ecured.cu/images/d/dc/Avatar_The_Last_Airbender.jpg',
+        year: 1999,
+        genero: ['comedia', 'Recuentos de la vida'],
+        creador: 'Danny Antonucci',
+        numeroDetemporadas: 6,
+        numeroDeEpisodios: 66,
+        imagen: 'https://pics.filmaffinity.com/Ed_Edd_y_Eddy_Serie_de_TV-981204510-large.jpg',
     },
     {
         id: 7,
         nombre: 'El increible mundo de Gumball',
-        year: 2005,
-        genero: ['Fantasía', 'Aventuras', 'Telecomedia', 'Drama'],
-        creador: ['Michael Dante', 'Bryan Konietzko'],
-        numeroDetemporadas: 3,
-        numeroDeEpisodios: 61,
-        imagen: 'https://www.ecured.cu/images/d/dc/Avatar_The_Last_Airbender.jpg',
+        year: 2011,
+        genero: ['Humor absurdo', 'Aventuras', 'Musical', 'Humor negro', 'Sátira', 'Fantasía'],
+        creador: 'Ben Bocquelet',
+        numeroDetemporadas: 6,
+        numeroDeEpisodios: 240,
+        imagen: 'https://mx.web.img3.acsta.net/pictures/18/01/23/00/56/0950731.jpg',
     },
     {
         id: 8,
         nombre: 'El laboratorio de Dexter',
-        year: 2005,
-        genero: ['Fantasía', 'Aventuras', 'Telecomedia', 'Drama'],
-        creador: ['Michael Dante', 'Bryan Konietzko'],
-        numeroDetemporadas: 3,
-        numeroDeEpisodios: 61,
-        imagen: 'https://www.ecured.cu/images/d/dc/Avatar_The_Last_Airbender.jpg',
+        year: 1996,
+        genero: ['Ciencia ficción', 'Telecomedia'],
+        creador: 'Genndy Tartakovsky',
+        numeroDetemporadas: 4,
+        numeroDeEpisodios: 78,
+        imagen: 'https://pics.filmaffinity.com/dexter_s_laboratory-171392022-large.jpg',
     },
     {
         id: 9,
@@ -325,5 +320,7 @@ let peliculasAnimadas = [
 
 
 ]
+
+
 
 
