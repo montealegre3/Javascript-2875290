@@ -16,7 +16,7 @@ let objeto = { //Objeto
  */
 
 
-let peliculasAnimadas = [
+let seriesAnimadas = [
     {
         id: 1,
         nombre: 'Animaniacs',
