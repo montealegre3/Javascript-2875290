@@ -21,3 +21,5 @@ seriesAnimadas.forEach( element => {
 
     container.appendChild(card);
 })
+
+
