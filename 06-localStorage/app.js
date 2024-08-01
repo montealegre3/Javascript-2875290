@@ -57,14 +57,7 @@ const contraseña = document.querySelector('#contrasena');
 const btnIniciar = document.querySelector('#btn1');
 
 
-//Registrar el dato de "user" en localStorage
-let user = {
-    userName: 'admin',
-    userPass: '1234',
-}
 
-
-localStorage.setItem('user', JSON.stringify(user) )
 
 //Inicio de sesión 
 function validarUsuario (e){
