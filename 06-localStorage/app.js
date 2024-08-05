@@ -94,3 +94,6 @@ function validarUsuario (e){
 
 
 formulario.addEventListener('submit', validarUsuario)
+
+
+
