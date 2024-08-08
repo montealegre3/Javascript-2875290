@@ -65,4 +65,7 @@ body {
 
 .titulo{
     color: white;
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
 }

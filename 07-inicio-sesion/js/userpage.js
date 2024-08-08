@@ -21,3 +21,9 @@ seriesAnimadas.forEach( element => {
 
     container.appendChild(card);
 })
+
+const saludo = document.querySelector('.saludo');
+
+let nombreUser = JSON.parse(localStorage.getItem("usuario"));
+
+saludo.innerHTML = `Hola ${nombreUser.userN}`

@@ -83,13 +83,6 @@ function validarUsuario (e){
     }
 
         formulario.reset()
-
-
-
-
-
-
-
 }
 
 
