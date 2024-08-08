@@ -10,9 +10,12 @@ function registrarUsuario (e){
         userP: password.value,
     }
 
+    
+
 
     localStorage.setItem("usuario", JSON.stringify(usuario)); 
     formulario.reset()
 }
 
 formulario.addEventListener("submit",registrarUsuario)
+

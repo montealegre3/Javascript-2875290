@@ -69,3 +69,11 @@ body {
     position: relative;
     text-align: center;
 }
+
+.saludo{
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+

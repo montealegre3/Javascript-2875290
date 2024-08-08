@@ -6,8 +6,8 @@ function validarUsuario (e){
     e.preventDefault();
 
     let currentUser = JSON.parse(localStorage.getItem("usuario"));
-    console.log(currentUser.userName);
-    console.log(currentUser.password);
+    console.log(currentUser.userN);
+    console.log(currentUser.userP);
 
 
     console.log(Boolean(userName.value === currentUser.userN));
