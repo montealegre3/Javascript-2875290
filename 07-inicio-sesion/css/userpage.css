@@ -77,3 +77,28 @@ body {
     color: white;
 }
 
+.btnCerrar {
+    background-color: #272727; 
+    color: white; 
+    border: none; 
+    border-radius: 12px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(163, 163, 163, 0.485);
+    float: right;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.btnCerrar:hover {
+    background-color: #4a4a4a; 
+}
+
+
+
+
+

@@ -23,7 +23,15 @@ seriesAnimadas.forEach( element => {
 })
 
 const saludo = document.querySelector('.saludo');
+const btn = document.querySelector('.btnCerrar');
 
 let nombreUser = JSON.parse(localStorage.getItem("usuario"));
 
 saludo.innerHTML = `Hola ${nombreUser.userN}`
+
+
+function cerrarSesion (){
+    window.location = "../vistas/cerrar.html"
+}
+
+btn.addEventListener("click", cerrarSesion)
