@@ -42,13 +42,13 @@ function filtrar(e) {
         filtro = seriesAnimadas.filter(seriesAnimadas => seriesAnimadas.genero.toString().toLowerCase().includes(listaStatus.value.toLowerCase())).filter(seriesAnimadas => seriesAnimadas.nombre.toLowerCase().includes(textoBusqueda.value.toLowerCase()));
         console.log(seriesAnimadas[1].genero.toString().toLowerCase())
         mostrarResults(filtro)
-    }
-
-    if(textoBusqueda.value) {
-        filtro = filtro.filter(seriesAnimadas => seriesAnimadas.nombre.toLowerCase().includes(textoBusqueda.value.toLowerCase()));
-    }
-
-    mostrarResults(filtro);
+    }else{
+        if(textoBusqueda.value) {
+            filtro = filtro.filter(seriesAnimadas => seriesAnimadas.nombre.toLowerCase().includes(textoBusqueda.value.toLowerCase()));
+        }
+    
+        mostrarResults(filtro);
+    }  
 }
 
 buscador.addEventListener('submit', filtrar);
