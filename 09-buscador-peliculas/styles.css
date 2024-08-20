@@ -109,10 +109,11 @@ header {
 }
 
 #buscador button:hover {
-    background-color: #360f68;
+    background-color: #3e1277;
 }
 
 header h1 {
     margin: 0;
     padding: 0;
 }
+
