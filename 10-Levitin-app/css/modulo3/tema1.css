@@ -2,17 +2,29 @@
 
 
 .header {
-    margin-right: 25px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #ffffff;
-    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img .logo {
-    height: 70px;
+    height: 50px;
+}
+
+.logo h3 {
+    margin: 5px 0 0;
+    font-size: 18px;
+    font-family: 'Archivo Narrow';
+    color:#8080BC;
 }
 
 .nav {
@@ -88,6 +100,13 @@ button:hover {
     display: block;
 }
 
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Archivo Narrow';
+    color: #8080BC;
+}
+
 body {
     font-family: 'Archivo Narrow';
     margin: 0;
@@ -106,19 +125,7 @@ main {
     padding: 30px;
 }
 
-.modulo3T1 {
-    width: 20%;
-    padding: 20px;
-}
-
-.modulo3T1 p {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Archivo Narrow';
-    color: #8080BC;
-}
-
-.titulo1 {
+.contenido {
     width: 80%;
     text-align: center;
     padding: 5%;
@@ -127,12 +134,21 @@ main {
     color: #8080BC;
 }
 
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0px;
+}
+
 .card {
     margin: 20px auto;
     width: 80%;
+    margin-top: 100px;
 }
 
 .card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: auto;
     cursor: pointer;
@@ -141,7 +157,7 @@ main {
 
 h2 {
     font-size: 20px;
-    padding: 150px;
+    margin: 100px;
 }
 
 .comment-section {
@@ -175,8 +191,7 @@ h2 {
 }
 
 .navigation-buttons {
-    margin-top: 30px;
-    padding: 200px;
+    margin-top: 150px;
 }
 
 .navigation-buttons button {
