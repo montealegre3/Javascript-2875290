@@ -1,74 +1,237 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-header {
+.header {
+    margin-right: 25px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    color: white;
 }
 
-.logo img {
-    height: 50px;
+img .logo {
+    height: 70px;
 }
 
-.menu {
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.inicio-sesion {
+    background-color:#8080BC;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.registro {
+    background-color:#8080BC;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.modulos {
+    background-color:#8080BC;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color:#745a95;
+}
+
+.desplegable {
     position: relative;
 }
 
-.menu-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.dropdown-content {
+.menu-desplegable {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    right: 0;
+    background-color:#8080BC;
+    border: 1px solid #745a95;
+    z-index: 1000;
+    border-radius: 6px;
 }
 
-.dropdown-content a {
+.menu-desplegable  a {
     display: block;
-    padding: 8px 16px;
+    padding: 10px 15px;
+    color: white;
     text-decoration: none;
-    color: #333;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
+.menu-desplegable a:hover {
+    background-color: #745a95;
 }
 
-.menu:hover .dropdown-content {
+.modulos:focus + .menu-desplegable ,
+.menu-desplegable :hover {
     display: block;
 }
 
-.auth-buttons button {
-    margin-left: 10px;
-    padding: 8px 16px;
-    border: none;
+body {
+    font-family: 'Archivo Narrow';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    padding: 30px;
+}
+
+.modulo3T1 {
+    width: 20%;
+    padding: 20px;
+}
+
+.modulo3T1 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Archivo Narrow';
+    color: #8080BC;
+}
+
+.titulo1 {
+    width: 80%;
+    text-align: center;
+    padding: 5%;
+    font-size: 20px;
+    font-family: 'Archivo Narrow';
+    color: #8080BC;
+}
+
+.card {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 150px;
+}
+
+.comment-section {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.comment-section textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
     font-size: 16px;
+    background-color: #dcdcdccc;
 }
 
-.login-btn {
-    background-color: #007bff;
+.comment-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color:#8080BC;
     color: white;
+    cursor: pointer;
 }
 
-.register-btn {
-    background-color: #28a745;
-    color: white;
+.comment-section button:hover {
+    background-color: #745a95;
 }
 
+.navigation-buttons {
+    margin-top: 30px;
+    padding: 200px;
+}
 
+.navigation-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F8F1D3;
+    color: black;
+    cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+    background-color: #ece5cc;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: 5% auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 footer {
     display: flex;
@@ -96,8 +259,12 @@ footer {
     height: 80px;
 }
 
+.social-icons i {
+    color: white;
+}
+
 .contact-email a {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-size: 16px;
 }
@@ -105,3 +272,6 @@ footer {
 .contact-email a:hover {
     text-decoration: underline;
 }
+
+
+
